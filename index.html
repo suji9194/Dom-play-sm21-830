@@ -1,249 +1,268 @@
 <html>
 <head>
+    <meta charset="utf-8" />
+    <title> DOM Play</title>
+    <meta name="robots" content="noindex,nofollow" />
 <style>
+    *{padding:0; margin:0}
+    html {background-color: blueviolet;}
+    body {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        max-width:960px;
+        width:90%;
+        background-color: whitesmoke;
+        padding:20px;
+        min-height:100%;
+    }
+    h1,h2{
+        text-align: center;
+        font-weight: 400;
+        font-style:italic;
+    }
 
 </style>
 </head> 
 <body> 
+    <header> 
+        <h1 class="masthead"> <u> DOM Play </u></h1>
+    </header>
+
+    <main>
+        <header><h3> A JavaScript Example by Sujitha Rajan</h3></header>
+        <p> This web page use JavaScript and the DOM to highlight all lines for a specific actor in movie script, while un-highlighting the lines of other actors.</p>
+        <p> To see it work, click on any of the character lines and see all their lines get higglighted. Even toggle between character.</p>
+    </main>
     <h1> DOM Play</h1>
+    <!--<p><span onclick="myHighlight(this)"> TO BE NOT TO BE</span></p> -->
+    <h2> JOKER </h2>
+    <p> A JavaScript Assignment by Sujitha Rajan</p>
     <div id="play">
-        <b>1   INT. DEPT. OF HEALTH, OFFICE - MORNING                          1
-        </b>
-            CLOSE ON JOKER (30's), tears in his eyes from laughing so
-            hard. He's trying to get it under control. His greasy, black
-            hair is matted down. He's wearing an old, faded red hooded
-            zip-up sweatshirt, a threadbare gray scarf, thin from years
-            of use, hangs loosely around his neck.
+    <p><span data-actor="INT. DEPT"> <strong>INT. DEPT. OF HEALTH, OFFICE - MORNING </strong> <br></br>
+        CLOSE ON JOKER (30's), tears in his <br>eyes from laughing so
+        hard.<br> He's trying to get it under control.<br> His greasy, black
+        hair is matted down.<br> He's wearing an old, faded red hooded<br>
+        zip-up sweatshirt, a threadbare<br> gray scarf, thin from years<br>
+        of use, hangs loosely around his neck.<br>
+            
+        </br>
+            WE NOTICE TWO FADED OLD SCARS <br>cut at the corners of his
+            mouth.<br> Almost forming a smile.<br>
+
+        <br>He's sitting across from an <br>overworked SOCIAL WORKER (50's),
+            African American.<br> Her office is cramped and run-down in<br> a
+            cramped and run-down building.<br> Stacks of folders piled high
+            in front of her.</br>
+
+        <br>She just sits behind her desk, <br>waiting for his laughing fit
+            to end, she's been <br>through this before. Finally it subsides.<br>
+            Joker takes a deep breath, pauses to see if it's over.</span></p>
+            Beat.</br>
         
-            WE NOTICE TWO FADED OLD SCARS cut at the corners of his
-            mouth. Almost forming a smile.
+    <span><br><strong> JOKER </strong>
+        </br></span>
+        <br> --is it just me, or is it getting
+               crazier out there?<br>
         
-            He's sitting across from an overworked SOCIAL WORKER (50's),
-            African American. Her office is cramped and run-down in a
-            cramped and run-down building. Stacks of folders piled high
-            in front of her.
+        <br>Despite the laughter, there's real pain in his eyes.<br>
+            Something broken in him. <br>Looks like he hasn't slept in days.<br>
         
-            She just sits behind her desk, waiting for his laughing fit
-            to end, she's been through this before. Finally it subsides.
+    <span><br><strong> SOCIAL WORKER </strong>
+        </br></span><br>It's certainly tense.<br> People are
+                      upset, they're struggling.<br> Looking
+                      for work.<br> The garbage strike seems
+                      like it's been<br> going on forever.<br>
+                      These are tough times.<br>
+                       <br>   (then)</br>
+                     <br> How 'bout you. How's the job? Still
+                      enjoying it?<br>
         
-            Joker takes a deep breath, pauses to see if it's over.
-        
-            Beat.
-        
-        <b>                        JOKER
-        </b>              --is it just me, or is it getting
-                      crazier out there?
-        
-            Despite the laughter, there's real pain in his eyes.
-            Something broken in him. Looks like he hasn't slept in days.
-        
-        <b>                         SOCIAL WORKER
-        </b>              It's certainly tense. People are
-                      upset, they're struggling. Looking
-                      for work. The garbage strike seems
-                      like it's been going on forever.
-                      These are tough times.
-                          (then)
-                      How 'bout you. How's the job? Still
-                      enjoying it?
-        
-        <b>                          JOKER
-        </b>              Yeah, I   mean, it's different each
-                      day, so   I really like that. I don't
+    <span><br><strong> JOKER </strong>
+        </br></span>
+                <br>Yeah, I   mean, it's different each
+                      day, so   I really like that.<br> I don't
                       think I   could ever work in an
-                      office.   Behind a desk.
-        <b>                          (MORE)
-        </b><b>                                                         2.
-        </b>
-        <b>                     JOKER (CONT'D)
-        </b>              (beat)
-                  No offense.
+                      office. Behind a desk.<br>
+                                (MORE)<br>
+    <span><br><strong> JOKER (CONT'D) </strong><br></span>
+                 <br>(beat)<br>
+                    No offense.
         
-        She smiles. Writes something down. Looks at the clock, she's
-        running late for her next appointment.
+        <br>She smiles. Writes something down.<br> Looks at the clock, she's
+        running late for her next appointment.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Have you been keeping up with your
-                  journal?
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br>Have you been keeping up with your
+                  journal?<br>
         
-        <b>                       JOKER
-        </b>          Everyday.
+    <span><br><strong> JOKER </strong><br></span>
+                 <br>Everyday.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Great. Did you bring it with you?
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                  <br>Great. Did you bring it with you?<br>
+                    Beat.<br>
         
-        Beat.
+    <span><br><strong> JOKER </strong><br></span>
+                    <br>(dodging the subject)<br>
+                  I'm sorry. Did I bring what?<br>
         
-        <b>                    JOKER
-        </b>              (dodging the subject)
-                  I'm sorry. Did I bring what?
+    <span><br><strong>  SOCIAL WORKER   </strong><br></span>
+                        <br> (impatient; she doesn't
+                       have time for this)<br>
+                        Arthur, last time I asked you to
+                        bring your journal with you. <br>For
+                        these appointments.<br> Do you have it?<br>
         
-        <b>                    SOCIAL WORKER
-        </b>              (impatient; she doesn't
-                       have time for this)
-                  Arthur, last time I asked you to
-                  bring your journal with you. For
-                  these appointments. Do you have it?
+    <span><br><strong>  JOKER  </strong><br></span>
+                  <br>Yes ma'am.<br>
         
-        <b>                       JOKER
-        </b>          Yes ma'am.
+                        Beat.<br>
         
-        Beat.
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br>Can I see it? <br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Can I see it?
+                <br>He reluctantly reaches into his bag. Pulls out a weathered
+                    notebook.<br> Slides it across to her--<br>
         
-        He reluctantly reaches into his bag. Pulls out a weathered
-        notebook. Slides it across to her--
-        
-        <b>                    JOKER
-        </b>          I've been using it as a journal,
-                  but also a joke diary. Funny
-                  thoughts or, or observations-- Did
+    <span><br><strong> JOKER </strong><br></span>
+               <br> I've been using it as a journal,<br>
+                  but also a joke diary.<br> Funny
+                  thoughts or, or observations-- Did<br>
                   I tell you I'm pursuing a career in
-                  stand-up comedy?
+                  stand-up comedy?<br>
+                  She's half-listening as she flips through his journal.<br>
         
-        She's half-listening as she flips through his journal.
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br>No.<br> You didn't.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          No. You didn't.
+    <span><br><strong> JOKER  </strong><br></span>
+                <br> I think I did.<br>
         
-        <b>                    JOKER
-        </b>          I think I did.
-        <b>                                                            3.
-        </b>
+                <br> She doesn't respond, keeps flipping through his journal--<br>
+
+    <span><br><strong> SOCIAL WORKER   </strong><br></span>
+               <br>  Oh yeah. Because of what your
+                  mother said,-- about your purpose.<br>
+                  <br>"To bring laughter and joy to the
+                  world," right?<br>
         
-        She doesn't respond, keeps flipping through his journal--
+    <span><br><strong> JOKER  </strong><br></span>
+                <br>  Right.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Oh yeah. Because of what your
-                  mother said,-- about your purpose.
-                  "To bring laughter and joy to the
-                  world," right?
+                <br> ANGLE ON JOURNAL, pages and pages of notes,<br> all in neat,
+                    angry-looking handwriting. <br>Also, cut out photos from hardcore
+                    pornographic <br>magazines and some crude handmade drawings.<br>
+                    A flash of anger crosses Joker's face. <br>We see him picking at
+                    his right eyebrow, almost obsessively.<br> Trying to stay calm.
+                    His eyebrow is actually half-gone. <br>Something he does a lot.<br>
+                    
+    <span><br><strong> JOKER </strong><br></span>
+                <br> I didn't realize you wanted to read
+                  it.<br>
         
-        <b>                    JOKER
-        </b>          Right.
+                    The social worker gives him a look,<br> then reads something in
+                    the pages that gives her pause.<br>
+     
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                    <br>  (reading out loud)<br>
+                    <br> "I just hope my death makes more
+                        sense than my life."<br>
         
-        ANGLE ON JOURNAL, pages and pages of notes, all in neat,
-        angry-looking handwriting. Also, cut out photos from hardcore
-        pornographic magazines and some crude handmade drawings.
+                    <br>She looks up at Joker. <br>He just stares back.<br> Lets it hang out
+                        there for a beat.<br>
         
-        A flash of anger crosses Joker's face. We see him picking at
-        his right eyebrow, almost obsessively. Trying to stay calm.
-        His eyebrow is actually half-gone. Something he does a lot.
+                    <br>Then he laughs a little, even though he doesn't think it's
+                        funny--<br>
         
-        <b>                    JOKER
-        </b>          I didn't realize you wanted to read
-                  it.
+    <span><br><strong> JOKER </strong><br></span>
+                    <br>  Yeah. I mean, that's just--<br>
         
-        The social worker gives him a look, then reads something in
-        the pages that gives her pause.
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br>Does my reading it upset you?<br>
         
-        <b>                    SOCIAL WORKER
-        </b>              (reading out loud)
-                  "I just hope my death makes more
-                  sense than my life."
+                <br>He leans in.<br>
         
-        She looks up at Joker. He just stares back. Lets it hang out
-        there for a beat.
+    <span><br><strong> JOKER </strong><br></span>
+                <br>   No. I just,-- some of it's
+                  personal.<br> You know?
         
-        Then he laughs a little, even though he doesn't think it's
-        funny--
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                 <br> I understand. <br>I just want to make
+                  sure you're keeping up with it.<br>
         
-        <b>                    JOKER
-        </b>          Yeah. I mean, that's just--
+                <br> She slides his journal back to him. He holds it in his lap.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Does my reading it upset you?
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br>  What about your mom? How's she
+                  feeling?<br>
         
-        He leans in.
-        
-        <b>                    JOKER
-        </b>          No. I just,-- some of it's
-                  personal. You know?
-        
-        <b>                    SOCIAL WORKER
-        </b>          I understand. I just want to make
-                  sure you're keeping up with it.
-        
-        She slides his journal back to him. He holds it in his lap.
-        <b>                                                         4.
-        </b>
-        
-        <b>                    SOCIAL WORKER
-        </b>          What about your mom? How's she
-                  feeling?
-        
-        <b>                    JOKER
-        </b>          She has good days. But mostly bad.
+    <span><br><strong> JOKER </strong><br></span>
+                <br> She has good days. But mostly bad.<br>
                   It's been a big help having me
-                  there. She really needs me.
+                  there.<br> She really needs me.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Seems like she's been sick a lot
-                  since you got home.
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br>  Seems like she's been sick a lot
+                  since you got home.<br>
         
-        <b>                     JOKER
-        </b>              (nods)
-                  Yeah, it's good I'm there. When I
+    <span><br><strong> JOKER </strong><br></span>
+                <br> (nods)<br>
+                  Yeah, it's good I'm there. <br>When I
                   was in the hospital, after my last
-                  episode-- she was having trouble
-                  getting over there to visit.
+                  episode--<br> she was having trouble
+                  getting over there to visit.<br>
         
-        She looks back up at the clock, she needs to get to her next
-        appointment.
+                <br>She looks back up at the clock, <br>she needs to get to her next
+                    appointment.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          All right. So, I'll see you again,
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br> All right.<br> So, I'll see you again,
                   two weeks from today?
         
-        He nods. But keeps sitting there for a moment.
+                <br>He nods. But keeps sitting there for a moment.
         
-        She stands up, trying to signal it's time for him to leave--
+                <br> She stands up, trying to signal it's time for him to leave--<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Is there something else I can help
+    <span><br><strong>    SOCIAL WORKER  </strong><br></span>
+                <br>  Is there something else I can help<br>
                   you with, Arthur? My next
-                  appointment is waiting.
+                  appointment is waiting.<br>
         
-        He just keeps sitting there.
+                <br>He just keeps sitting there.<br>
         
-        <b>                    JOKER
-        </b>          Yeah, I was wondering if you could
-                  ask the doctor to increase the
-                  dosage on my medications? Nothing
-                  seems to make a difference.
+    <span><br><strong>  JOKER  </strong><br></span>
+                <br> Yeah, I was wondering if you could
+                 <br> ask the doctor to increase the
+                  dosage on my medications?<br> Nothing
+                  seems to make a difference.<br>
         
-        <b>                     SOCIAL WORKER
-        </b>              (looking over his record)
-                  Do you know which ones you'd like
-                  increased?
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br>  (looking over his record)<br>
+                    Do you know which ones you'd like
+                    increased?<br>
         
-        Shakes his head, no.
+                    Shakes his head, no.<br>
         
-        <b>                    SOCIAL WORKER
-        </b>          Have you been sleeping?
-        <b>                                                              5.
-        </b>
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br> Have you been sleeping?<br>
+       
+    <span><br><strong> JOKER </strong><br></span>
+                <br> (lying)
+                    Some.<br>
         
-        <b>                        JOKER
-        </b>                  (lying)
-                      Some.
+                     She glances at his file again.<br>
         
-            She glances at his file again.
+    <span><br><strong> SOCIAL WORKER </strong><br></span>
+                <br> Arthur, you're on seven different
+                      medications. <br>Surely they must be
+                      doing something.<br>
         
-        <b>                        SOCIAL WORKER
-        </b>              Arthur, you're on seven different
-                      medications. Surely they must be
-                      doing something.
+                    He finally stands up. <br>Zips up his faded red sweatshirt.
         
-            He finally stands up. Zips up his faded red sweatshirt.
+                    Looks at her--<br>
         
-            Looks at her--
-        
-        <b>                        JOKER
-        </b>              I just don't wanna feel so bad
-                      anymore.
+    <span><br><strong> JOKER  </strong><br></span>
+                <br>  I just don't wanna feel so bad
+                     nymore.<br>
     </script>
 </body>
 
